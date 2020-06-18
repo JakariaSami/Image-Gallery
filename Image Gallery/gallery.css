@@ -1,0 +1,52 @@
+*{margin:0; padding:0}
+
+.panels{
+    font-family: cursive;
+    text-transform:uppercase;
+    font-weight:bolder;
+    color:#ff9800;
+    font-size:30px;
+    display:flex;
+    overflow:hidden;
+    border:5px solid orange
+}
+.panel{
+    background-size:cover;
+    text-align:center;
+    height:98.5vh;
+    flex-grow:1;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    transition:
+        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        background 0.2s;
+}
+.panel p{
+    transition:transform 0.5s;
+    width:100%;
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.panel p:first-child{transform:translateY(-100%)}
+.panel p:last-child{transform:translateY(100%)}
+.panel.open-active p:first-child{transform:translateY(0)}
+.panel.open-active p:last-child{transform:translateY(0)}
+
+.open{
+    flex-grow:10;
+    font-size:40px;
+}
+
+.panel1 {background-image: url('https://i.pinimg.com/originals/4b/2c/e5/4b2ce54ca4237c6ccbe824900efd0511.jpg')}
+.panel2{background-image:url('https://pics.freeartbackgrounds.com/fullhd/Beautiful_Butterfly_Perched_on_Wild_Flower_Background-961.jpg')}
+.panel3{background-image:url('https://summarizer.co/static/from-a-dazed-owl-to-a-dancing--200515122851-11-animal-comedy-photo-intl-scli-super-tease.jpg')}
+.panel4{background-image:url('https://capacanada.ca/wp-content/uploads/2020/04/2nd-Merit-Animal-Anthony-Bucci-Owl.jpg')}
+.panel5{background-image:url('https://i.imgur.com/BH6gx4n.jpg')}
+.panel6{background-image:url('https://i.pinimg.com/originals/ef/b2/51/efb2514919ed5dd3b86320822c87dad6.jpg')}
+.panel7{background-image:url('https://p1.pxfuel.com/preview/396/1/181/squirrel-close-animals-cute.jpg')}
